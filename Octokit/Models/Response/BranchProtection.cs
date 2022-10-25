@@ -187,7 +187,7 @@ namespace Octokit
         /// </summary>
         public IReadOnlyList<User> Users { get; private set; }
 
-        internal string DebuggerDisplay
+        public string DebuggerDisplay
         {
             get
             {
@@ -272,7 +272,7 @@ namespace Octokit
         /// </summary>
         public IReadOnlyList<User> Users { get; private set; }
 
-        internal string DebuggerDisplay
+        public string DebuggerDisplay
         {
             get
             {
