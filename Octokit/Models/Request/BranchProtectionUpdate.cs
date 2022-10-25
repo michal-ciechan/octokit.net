@@ -139,13 +139,13 @@ namespace Octokit
         /// Required Pull Request review settings for the protected branch
         /// </summary>
         [SerializeNull]
-        public BranchProtectionRequiredReviewsUpdate RequiredPullRequestReviews { get; protected set; }
+        public BranchProtectionRequiredReviewsUpdate RequiredPullRequestReviews { get; set; }
 
         /// <summary>
         /// Push access restrictions for the protected branch
         /// </summary>
         [SerializeNull]
-        public BranchProtectionPushRestrictionsUpdate Restrictions { get; protected set; }
+        public BranchProtectionPushRestrictionsUpdate Restrictions { get; set; }
 
         /// <summary>
         /// Specifies whether the protections applied to this branch also apply to repository admins
@@ -378,22 +378,22 @@ namespace Octokit
         /// <summary>
         /// Specify which users and teams can dismiss pull request reviews.
         /// </summary>
-        public BranchProtectionRequiredReviewsDismissalRestrictionsUpdate DismissalRestrictions { get; protected set; }
+        public BranchProtectionRequiredReviewsDismissalRestrictionsUpdate DismissalRestrictions { get; set; }
 
         /// <summary>
         /// Dismiss approved reviews automatically when a new commit is pushed.
         /// </summary>
-        public bool DismissStaleReviews { get; protected set; }
+        public bool DismissStaleReviews { get; set; }
 
         /// <summary>
         /// Blocks merge until code owners have reviewed.
         /// </summary>
-        public bool RequireCodeOwnerReviews { get; protected set; }
+        public bool RequireCodeOwnerReviews { get; set; }
 
         /// <summary>
         /// Specify the number of reviewers required to approve pull requests. Use a number between 1 and 6.
         /// </summary>
-        public int RequiredApprovingReviewCount { get; protected set; }
+        public int RequiredApprovingReviewCount { get; set; }
 
         internal string DebuggerDisplay
         {
